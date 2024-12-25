@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './main.css';
 
 /* api */
-import Api from '../../api/api';
+import Api from '../../api/Api';
 
 /* js obj */
 import namedayCountries from '../../data/namedayCountries';
