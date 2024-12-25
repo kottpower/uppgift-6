@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import "./SearchComponent.css";
 
 /* api */
-import Api from "../../api/api.js";
+import Api from "../../api/Api.js";
 
 /* Icons */
 import { FaArrowLeft } from "react-icons/fa";
