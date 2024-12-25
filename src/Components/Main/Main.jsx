@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './main.css';
+import './Main.css';
 
 /* api */
 import Api from '../../api/Api';
