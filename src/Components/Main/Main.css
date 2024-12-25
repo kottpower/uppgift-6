@@ -1,0 +1,136 @@
+.main {
+    flex: 4;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 8px;
+
+    max-height: 100vh;
+    overflow-y: scroll;
+
+    position: relative;
+    padding-top: 0;
+}
+
+
+.main ul {
+    list-style: none;
+    width: 100%;
+    
+}
+
+.main ul li {
+    border-bottom: 1px solid rgb(190, 190, 204);
+    font-weight: 400;
+    padding: 8px 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.main ul li {
+    display: flex;
+}
+
+.main ul li > * {
+    flex: 1;
+}
+
+.main ul li:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+
+.main .selected-date {
+    align-self: center;
+    font-size: 22px;
+    font-weight: 500;
+
+    position: sticky;
+    z-index: 999;
+    background-color: white;
+    top: 0;
+    padding-top: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* container-left */
+
+.main .container-left {
+    display: flex;
+
+    padding: 6px;
+
+    justify-content: flex-start;
+    margin-right: 6px;
+}
+
+.main .container-left > * {
+    margin-left: 8px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.main .container-left span {
+    font-weight: 500;
+}
+
+.main .container-left .country-flag {
+    display: flex;
+    align-items: center;
+}
+
+/* container-mid */
+
+
+
+/* container-right */
+
+.main .container-right {
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main .container-right span {
+    font-weight: 500;
+}
+
+.container-right .show-name.unselected {
+    cursor: pointer;
+}
+
+.container-right .show-name.unselected:hover {
+    color: rgb(97, 97, 97);
+}
+
+@media(max-width: 1000px) {
+    .main ul li {
+        flex-direction: column;
+    }
+
+    .main ul li .container-left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main ul li .container-left .country-flag {
+        order: -1;
+    }
+}
+
+@media(max-width: 600px) {
+    .main .selected-date {
+        font-size: 16px;
+        padding-top: 0;
+    }
+
+    .main .show-name {
+        text-align: center;
+    }
+
+    .main .show-name span {
+        display: block;
+    }
+}

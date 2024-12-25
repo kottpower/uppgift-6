@@ -1,0 +1,89 @@
+.search-component {
+
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+ 
+    border-right: 1px solid #cfcdcd;
+}
+
+.search-component h1 {
+    text-align: center;
+}
+
+.search-component .search-date {
+    display: flex;
+    margin-top: 6px;
+}
+
+.search-component .search-date > * {
+    flex: 1;
+}
+
+.search-component .search-date .right-arrow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-component .search-date .left-arrow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search-component .search-date .container-arrow {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-component .information-div {
+    margin-top: 12px;
+    border: 1px solid #cecaca;
+    padding: 4px;
+    box-shadow: rgba(0, 0, 0, 0.3) 1.95px 1.95px 3.5px;
+}
+
+.search-component button {
+    font-weight: 600;
+    margin-top: auto;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: purple;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 1.95px 1.95px 3.5px;
+}
+
+.search-component button:hover {
+    background-color: rgb(168, 0, 168);
+}
+
+@media(max-width: 600px) {
+    .search-component button {
+        width: 80%;
+        margin: auto;
+        margin-top: 16px;
+    }
+
+    .search-component .information-div {
+        display: none;
+    }
+
+
+    .search-component h1 {
+        font-size: 16px;
+    }
+
+    .search-component {
+        padding-top: 8px;
+        padding-bottom: 4px;
+    }
+
+    .search-component button {
+        margin-bottom: 0;
+    }
+  }
+
